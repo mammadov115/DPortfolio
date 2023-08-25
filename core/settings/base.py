@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -23,9 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-nv5yzw7j4w#77$8!^_hu#f1oe02iv*(owq@^hkzi@-s-7)!24!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
-ALLOWED_HOSTS = ['http://mammadov.pythonanywhere.com/']
 
 
 # Application definition
@@ -130,3 +128,4 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # static settings
 
 STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS = BASE_DIR / 'static'
